@@ -17,7 +17,7 @@ to generate your hashed passwords, or else logging in will cause Ansible to thin
 Role Variables
 --------------
 | Variable Name | Default value |
-| jenkins_password | $6$mysecretsalt$MIJffjeQyfrKKrGkprGrDL/g2mCJa53koLmYQuuLmY9y37pDvGKPXU1Ov3RbMi. |tpQ9cWvxAzUVtBLe7KrZoU.
+| jenkins_password | $6$mysecretsalt$MIJffjeQyfrKKrGkprGrDL/g2mCJa53koLmYQuuLmY9y37pDvGKPXU1Ov3RbMi. |tpQ9cWvxAzUVtBLe7KrZoU. |
 | remote_root_directory | /home/jenkins |
 
 Dependencies
