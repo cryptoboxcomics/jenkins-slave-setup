@@ -4,6 +4,7 @@
   user:
     name: jenkins
     password: "{{ jenkins_password }}"
+    shell: /bin/bash
 
 - name: Create remote root directory
   file:
