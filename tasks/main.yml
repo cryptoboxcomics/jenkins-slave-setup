@@ -1,2 +1,33 @@
 ---
 # tasks file for jenkins-slave-setup
+- name: Create Jenkins user
+  user:
+    name: jenkins
+    password: "{{ jenkins_password }}"
+
+- name: Create remote root directory
+  file:
+    path: "{{ remote_root_directory }}"
+    state: directory
+    owner: jenkins
+    group: jenkins
+
+- name: Install necessary packages for slave
+  yum:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - java
+    - python
+
+- name: Create .ssh directory
+  file:
+    path: /home/jenkins/.ssh
+    state: directory
+    owner: jenkins
+    group: jenkins
+
+- name: Copy master Jenkins public key
+  copy:
+    src: authorized_keys
+    dest: /home/jenkins/.ssh/authorized_keys
