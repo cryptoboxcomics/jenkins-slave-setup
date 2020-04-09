@@ -19,7 +19,7 @@
     state: present
   with_items:
     - java
-    - python
+    - python36
 
 - name: Create .ssh directory
   file:
