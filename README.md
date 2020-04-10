@@ -21,10 +21,6 @@ Role Variables
 | jenkins_password      | $6$mysecretsalt$MIJffjeQyfrKKrGkprGrDL/g2mCJa53koLmYQuuLmY9y37pDvGKPXU1Ov3RbMi.tpQ9cWvxAzUVtBLe7KrZoU. |
 | remote_root_directory | /home/jenkins                                                                                          |
 
-Dependencies
-------------
-
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
 
 Example Playbook
 ----------------
@@ -33,7 +29,7 @@ Including an example of how to use your role (for instance, with variables passe
 
     - hosts: servers
       roles:
-         - { role: username.rolename, x: 42 }
+         - jenkins-slave-setup
 
 License
 -------
@@ -43,4 +39,5 @@ BSD
 Author Information
 ------------------
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+Author name: Amber Lee
+Email: cryptoboxomics@aol.com
