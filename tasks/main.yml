@@ -15,11 +15,12 @@
 
 - name: Install necessary packages for slave
   yum:
-    name: "{{ item }}"
+    name:
+      - git
+      - java
+      - python36
     state: present
-  with_items:
-    - java
-    - python36
+    
 
 - name: Create .ssh directory
   file:
