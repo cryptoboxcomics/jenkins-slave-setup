@@ -1,2 +1,6 @@
 ---
+<<<<<<< HEAD
 # vars file for jenkins-salve-setup
+=======
+# vars file for jenkins-slave-setup
+>>>>>>> 2236983ea32a51aacbac222dabc2145101787915
