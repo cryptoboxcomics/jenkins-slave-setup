@@ -2,4 +2,8 @@
 - hosts: localhost
   remote_user: root
   roles:
+<<<<<<< HEAD
+    - jenkins-salve-setup
+=======
     - jenkins-slave-setup
+>>>>>>> 2236983ea32a51aacbac222dabc2145101787915
