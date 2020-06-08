@@ -1,9 +1,4 @@
 ---
-<<<<<<< HEAD
-# defaults file for jenkins-salve-setup
-jenkins_password: password
-=======
 # defaults file for jenkins-slave-setup
-jenkins_password: $6$mysecretsalt$MIJffjeQyfrKKrGkprGrDL/g2mCJa53koLmYQuuLmY9y37pDvGKPXU1Ov3RbMi.tpQ9cWvxAzUVtBLe7KrZoU.
->>>>>>> 2236983ea32a51aacbac222dabc2145101787915
+jenkins_password: password
 remote_root_directory: /home/jenkins
