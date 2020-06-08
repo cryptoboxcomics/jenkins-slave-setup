@@ -1,18 +1,10 @@
 ---
-<<<<<<< HEAD
-# tasks file for jenkins-salve-setup
-- name: Create Jenkins user
-  user: 
-    name: jenkins
-    password: "{{ jenkins_password }}"
-=======
 # tasks file for jenkins-slave-setup
 - name: Create Jenkins user
   user:
     name: jenkins
     password: "{{ jenkins_password }}"
     shell: /bin/bash
->>>>>>> 2236983ea32a51aacbac222dabc2145101787915
 
 - name: Create remote root directory
   file:
@@ -23,13 +15,6 @@
 
 - name: Install necessary packages for slave
   yum:
-<<<<<<< HEAD
-    name: "{{ item }}"
-    state: present
-  with_items:
-    - java
-    - python
-=======
     name:
       - git
       - java
@@ -45,7 +30,6 @@
     path: /etc/sudoers
     state: present
     line: "jenkins ALL=(ALL) NOPASSWD: ALL"
->>>>>>> 2236983ea32a51aacbac222dabc2145101787915
 
 - name: Create .ssh directory
   file:
@@ -57,8 +41,4 @@
 - name: Copy master Jenkins public key
   copy:
     src: authorized_keys
-<<<<<<< HEAD
     dest: /home/jenkins/.ssh/authorized_keys
-=======
-    dest: /home/jenkins/.ssh/authorized_keys
->>>>>>> 2236983ea32a51aacbac222dabc2145101787915
