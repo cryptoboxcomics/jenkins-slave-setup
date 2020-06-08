@@ -1,0 +1,4 @@
+---
+# defaults file for jenkins-salve-setup
+jenkins_password: password
+remote_root_directory: /home/jenkins
