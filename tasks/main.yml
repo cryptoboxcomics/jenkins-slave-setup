@@ -21,7 +21,11 @@
       - python36
       - python3-pip
       - epel-release
-      - ansible
+    state: present
+
+- name: Install python module ansible
+  yum:
+    name: ansible
     state: present
 
 - name: Add Jenkins to sudoers group
